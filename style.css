@@ -717,7 +717,7 @@ tr:hover th{
 }
 .map-content iframe{
     height: 600px;
-    filter: invert(90%)
+
 }
 
 /*Footer*/
@@ -811,7 +811,7 @@ footer {
         margin-bottom: 4px;
     }
     .banner {
-        height: 700px;
+        height: 780px;
     }
     .banner-param:first-child {
         display: flex;
@@ -969,7 +969,7 @@ footer {
         margin-bottom: 32px;
     }
     .banner {
-        height: 600px;
+        height: 800px;
     }
 
     .about-title h3 {
