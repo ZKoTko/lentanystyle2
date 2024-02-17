@@ -9,6 +9,31 @@
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="style.css">
     <style>
+      @media only screen and (max-width: 375px) {
+        .banner-param b {
+            font-size: 12px;
+        }
+        .banner-param p {
+            font-size: 12px;
+        }
+        .nav-link {
+          font-size: 12px !important;
+        }
+        .nav-links-wrapper {
+          width: 100%;
+          padding: 0 6px !important;
+        }
+        .banner-text {
+          margin-bottom: 120px;
+        }
+        .additional-nav-link {
+            margin-right: 4px;
+            font-size: 12px !important;
+        }
+        .additional-nav-links-wrapper  {
+            padding: 0 4px;
+        }
+      }
       @media only screen and (max-width: 1200px) {
         .aos-init {
           opacity: 1 !important;
@@ -20,7 +45,19 @@
   <body>
     <main>
 
+      <section class="additional-nav additional-nav-hidden" id="additional-nav">
+          <div class="additional-nav-links-wrapper">
+            <a class="additional-nav-link" href="#about-section">O projektu</a>
+            <a class="additional-nav-link" href="#table-section">Table</a>
+            <a class="additional-nav-link" href="#payment-section">Payment</a>
+            <a class="additional-nav-link" href="#form-section">Kontank</a>
+            <a class="additional-nav-link" href="#about2-section">O nás</a>
+            <a class="additional-nav-link" href="#map-section">Map</a>
+          </div>
+      </section>
+
       <section class="banner" style="background: url(assets/img/banner.jpg);">
+
         <header>
           <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
@@ -35,7 +72,7 @@
                 </ul>
               </li>
 
-              <div class="nav-links-wrapper" data-aos="zoom-in">
+      <!--        <div class="nav-links-wrapper" data-aos="zoom-in">
                 <li class="nav-item" data-aos="zoom-in" data-aos-duration="500">
                   <a class="nav-link" href="#about-section">
                     O projektu
@@ -66,42 +103,57 @@
                     Map
                   </a>
                 </li>
-              </div>
+              </div> -->
 
             </nav>
           </div>
         </header>
+
         <div class="banner-content">
           <div class="container">
+
             <div class="banner-text">
-              <p data-aos="fade-up" data-aos-duration="1500">Project</p>
+              <p data-aos="fade-up" data-aos-duration="1500">Byty 2+kk za 4 340 000 Kč</p>
               <h1 data-aos="fade-up" data-aos-duration="1500">Panorama Letňany</h1>
             </div>
-          </div>
-          <div class="container">
+          
             <div class="banner-params row">
-              <div class="banner-param col-xl-4 col-lg-6" data-aos="fade-up" data-aos-duration="500"><p>OC Letňany<b> 3 min</b></p><p>Metro Letňany<b>4 min</b></p></div>
-              <div class="banner-param col-xl-3 col-lg-6" data-aos="fade-up" data-aos-duration="1000"><p>110 000,- Kč včetně DPH</p></div>
-              <div class="banner-param col-xl-3 col-lg-12" data-aos="fade-up" data-aos-duration="1500"><b>Volných bytů:</b><p>pouze 13</p></div>
+              <div class="banner-param col-xl-4 col-lg-4 col-sm-12 col-12" id="first-param" data-aos="fade-up" data-aos-duration="500"><p>OC Letňany<b> 4 min</b></p><p>Metro Letňany<b>6 min</b></p></div>
+              <div class="banner-params-group col-xl-8 col-lg-8 col-sm-12 col-12">
+                <div class="banner-param" id="banner-param2" data-aos="fade-up" data-aos-duration="1000"><p>110 000,- Kč včetně DPH</p></div>
+                <div class="banner-param" data-aos="fade-up" data-aos-duration="1500"><p><b>Volných bytů:</b>pouze 13</p></div>
+              </div>
             </div>
+
           </div>
         </div>
+
       </section>
 
       <section class="about" id="about-section">
         <div class="container">
           <div class="about-content row">
-            <div class="about-title col-xxl-3 col-xl-2 col-lg-12" data-aos="fade-up">
+            <div class="about-title col-xxl-2 col-xl-2 col-lg-12" data-aos="fade-up">
               <h3>O projektu</h3>
             </div>
-            <div class="about-text col-xxl-9 col-xl-10 col-lg-12" data-aos="fade-up">
+            <div class="about-text col-xxl-10 col-xl-10 col-lg-12" data-aos="fade-up">
               <h3>Pohodlné bydlení v Letňanech</h3>
               <div class="row">
-                <div class="col-xl-6 col-lg-12">
-                  <p>Projekt Panorama Letňany představuje moderní životní styl v atraktivní části Prahy - Letňanech, umístěný na křižovatce ulic Křivoklátská a Tupolevova. Tento sedmipatrový bytový dům nabízí celkem 69 bytů s dobře promyšlenými dispozicemi, které se pohybují od útulných 1+kk až k prostorným bytům 3+kk.</p>
+                <div class="col-xl-6 col-lg-12" id="about-first-col">
+                  <p>V dynamicky se vyvíjející pražské čtvrti Letňany pro Vás připravujeme moderní sedmipatrový bytový dům, který nabídne celkem 69 bytů v atraktivních dispozicích  2kk a 3kk. <br><br>
+
+                    Každý byt bude disponovat terasou nebo lodžii přístupnou vždy ze dvou místnosti. To vnáší do bytů přirozené světlo a značně zvyšuje kvalitu bydlení.  Byty orientované na východ do vnitrobloku nabídnou uklidňující pohled do vzrostlé zeleně. V bytech se západní orientaci si vychutnáte daleké výhledy a  západy slunce při večerním posezení. 
+                    <br><br>
+                    Dům je připravován v souladu s  moderními standardy výstavby. Ekologická zelená střecha přispěje k lepšímu lokálnímu klimatu. Okna s tepelně a hlukově izolačními trojskly a rekuperační jednotky, kterými bude vybaven každý byt, zajistí Vám příjemné a hospodárné bydlení.
+                  </p>
                 </div>
                 <div class="col-xl-6 col-lg-12">
-                  <p>Tato lokalita nabízí všechny potřebné služby a skvělou dopravní dostupnost, což vám umožní užívat si moderní a poklidné bydlení s širokou škálou možností pro trávení volného času. Hned vedle projektu se nachází autobusová zastávka, odkud se do metra Letňany dostanete za 4 minuty, a naproti rezidenci se nachází obchodní centrum Letňany - pouhé 3 minuty pěšky.</p>
+                  <div class="about-img-wrapper"></div>
+                  <p>Projekt Panorama Letňany vzniká v místě s unikátní občanskou vybavenosti. Do 5 minut chůze od Vašeho budoucího domova se nachází škola, školka, krásné dětské hřiště,několik obchodů a restauraci. Naproti rezidenci se nachází OC Letňany, kde kromě obchodů si užijete také kino, restaurační část či dvoupatrový dětský koutek. Hned vedle OC Letňany se rozkládá areal trávení volného času - zimní stadion, sportovní hala, aquapark a další.
+                    Fandíme cyklodopravě, připravili jsme proto v přízemí domu velké kolárny a u vstupu bude zřízeno místo pro parkování sdílených kol. 
+                    <br><br>
+                    Autobusovou zastávku najdete hned u domu a do stanice metra C Letňany se dostanete za 6 minut.
+                  </p>
                 </div>
               </div>
             </div>
@@ -327,32 +379,69 @@
         <div class="container">
           <div class="payment-content">
             <h3 data-aos="fade-up">Platební podmínky </h3>
-            <div class="payment-items-wrapper row">
-              <div class="payment-item col-md-6 col-sm-12" data-aos="fade-up">
-                <h4>1. Ústní rezervace</h4>
-                <p>Ústní rezervace je prvním krokem při výběru konkrétní bytové jednotky, případně sklepu a garážového stání.  Uvědomujeme si, že výběr bytové jednotky není snadnou záležitostí a vyžaduje vždy potřebný čas na posouzení. Ústní rezervace umožňuje v klidu zvážit a vyhodnotit všechna pozitiva či negativa při výběru konkrétních bytové jednotky, patra či orientace na světovou stranu. Ústní rezervace je možná na 5 pracovních dnu.</p>
+            <div class="accordion">
+              <div class="accordion-item" data-aos="fade-up">
+                  <div class="accordion-item-header">
+                    <h4>1. Ústní rezervace</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+                      <path d="M1.5 1.5L6.5 6.5L11.5 1.5" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                      <p>Ústní rezervace je prvním krokem při výběru konkrétní bytové jednotky, případně sklepu a garážového stání.  Uvědomujeme si, že výběr bytové jednotky není snadnou záležitostí a vyžaduje vždy potřebný čas na posouzení. Ústní rezervace umožňuje v klidu zvážit a vyhodnotit všechna pozitiva či negativa při výběru konkrétních bytové jednotky, patra či orientace na světovou stranu. Ústní rezervace je možná na 5 pracovních dnu.</p>
+                  </div>
+                  </div>
               </div>
-              <div class="payment-item col-md-6 col-sm-12" data-aos="fade-up">
-                <h4>2. Rezervační smlouva</h4>
-                <p>Rezervační smlouva je druhým krokem, jenž zajišťuje rezervaci konkrétní bytové jednotky, v tomto případě již na delší časové období než v případě ústní rezervace.
-                  <br><br>
-                  Rezervační poplatek činí 100 000,- Kč a je splatný do 5 dnů po podpisu rezervační smlouvy. V případě uzavření Smlouvy o smlouvě budoucí kupní je následně započten do první zálohové platby kupní ceny. Rezervační smlouva již pracuje s konkrétním výběrem jednotek (byt, případně sklep a garážového stání) a přílohou smlouvy je kvalitativní standard projektu, pravidla platebního kalendáře, i rámcový text Smlouvy o smlouvě budoucí kupní, jenž se bude uzavírat v dalším kroku.</p>
+              <div class="accordion-item" data-aos="fade-up">
+                  <div class="accordion-item-header">
+                    <h4>2. Rezervační smlouva</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+                      <path d="M1.5 1.5L6.5 6.5L11.5 1.5" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <p>Rezervační smlouva je druhým krokem, jenž zajišťuje rezervaci konkrétní bytové jednotky, v tomto případě již na delší časové období než v případě ústní rezervace.
+                      <br><br>
+                      Rezervační poplatek činí 100 000,- Kč a je splatný do 5 dnů po podpisu rezervační smlouvy. V případě uzavření Smlouvy o smlouvě budoucí kupní je následně započten do první zálohové platby kupní ceny. Rezervační smlouva již pracuje s konkrétním výběrem jednotek (byt, případně sklep a garážového stání) a přílohou smlouvy je kvalitativní standard projektu, pravidla platebního kalendáře, i rámcový text Smlouvy o smlouvě budoucí kupní, jenž se bude uzavírat v dalším kroku.</p>
+                  </div>
+                  </div>
               </div>
-              <div class="payment-item col-md-6 col-sm-12" data-aos="fade-up">
-                <h4>3. Smlouva o smlouvě budoucí kupní</h4>
-                <p>Smlouva o smlouvě budoucí kupní je následným krokem po Rezervační smlouvě. Před uplynutím rezervační doby uvedené v Rezervační smlouvě je zaslána kupujícímu tzv. „Výzva k uzavření Smlouvy budoucí kupní“. Tato smlouva řeší kromě jiného i vlastní financování předmětu koupě a její nedílnou součástí je i platební kalendář. Po uzavření této smlouvy následuje první zálohová platba sjednané kupní ceny do výše 10% kupní ceny. V této platbě je již zahrnutý uhrazený rezervační poplatek ve výši 100.000,- Kč. 
-                  <br><br>
-                  Druhá a poslední platba v platebním kalendáři Smlouva o smlouvě budoucí kupní činí 90% kupní ceny. Tento doplatek je realizován až po dokončení a kolaudaci stavby, avšak před vlastní kupní smlouvou. Na úhradu doplatku je možno také využít i hypoteční úvěr. </p>
+              <div class="accordion-item" data-aos="fade-up">
+                  <div class="accordion-item-header">
+                    <h4>3. Smlouva o smlouvě budoucí kupní</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+                      <path d="M1.5 1.5L6.5 6.5L11.5 1.5" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <p>Smlouva o smlouvě budoucí kupní je následným krokem po Rezervační smlouvě. Před uplynutím rezervační doby uvedené v Rezervační smlouvě je zaslána kupujícímu tzv. „Výzva k uzavření Smlouvy budoucí kupní“. Tato smlouva řeší kromě jiného i vlastní financování předmětu koupě a její nedílnou součástí je i platební kalendář. Po uzavření této smlouvy následuje první zálohová platba sjednané kupní ceny do výše 10% kupní ceny. V této platbě je již zahrnutý uhrazený rezervační poplatek ve výši 100.000,- Kč. 
+                      <br><br>
+                      Druhá a poslední platba v platebním kalendáři Smlouva o smlouvě budoucí kupní činí 90% kupní ceny. Tento doplatek je realizován až po dokončení a kolaudaci stavby, avšak před vlastní kupní smlouvou. Na úhradu doplatku je možno také využít i hypoteční úvěr. </p>
+                  </div>
+                  </div>
               </div>
-              <div class="payment-item col-md-6 col-sm-12" data-aos="fade-up">
-                <h4>4. Kupní smlouva</h4>
-                <p>Kupní smlouva se uzavírá po dokončení bytových jednotek (konkrétně i vložení prohlášení vlastníka dokončených jednotek do katastru nemovitostí), kolaudaci domu a plné úhradě kupní ceny. V případě doplatku kupní ceny hypotečním úvěrem, požadujeme před uzavřením kupní smlouvy doložení úvěrové smlouvy a zástavních smluv.
-                  <br><br>
-                  Klienti jsou včas informováni na základě obdržení tzv. „Výzvy k podpisu Kupní smlouvy a k doplatku kupní ceny„ a rovněž jsou vyzváni k prohlídce nemovitosti.
-                  <br><br>
-                  Poslední krok po podpisu kupní smlouvy je předání Vaší nové bytové jednotky ke spokojenému bydlení.</p>
+              <div class="accordion-item" data-aos="fade-up">
+                  <div class="accordion-item-header">
+                    <h4>4. Kupní smlouva</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+                      <path d="M1.5 1.5L6.5 6.5L11.5 1.5" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <p>Kupní smlouva se uzavírá po dokončení bytových jednotek (konkrétně i vložení prohlášení vlastníka dokončených jednotek do katastru nemovitostí), kolaudaci domu a plné úhradě kupní ceny. V případě doplatku kupní ceny hypotečním úvěrem, požadujeme před uzavřením kupní smlouvy doložení úvěrové smlouvy a zástavních smluv.
+                      <br><br>
+                      Klienti jsou včas informováni na základě obdržení tzv. „Výzvy k podpisu Kupní smlouvy a k doplatku kupní ceny„ a rovněž jsou vyzváni k prohlídce nemovitosti.
+                      <br><br>
+                      Poslední krok po podpisu kupní smlouvy je předání Vaší nové bytové jednotky ke spokojenému bydlení.</p>
+                  </div>
+                  </div>
               </div>
-            </div>
+              </div>
+           
           </div>
         </div>
       </section>
@@ -535,6 +624,40 @@
           displayValTwo2.textContent = sliderTwo2.value;
       }
     </script>
-  
+      <script>
+        const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+        accordionItemHeaders.forEach(accordionItemHeader => {
+        accordionItemHeader.addEventListener("click", event => {
+            
+            // Разворачивается только один (при разворачивании второго первый сворачивается)
+            
+            // const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+            // if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+            //   currentlyActiveAccordionItemHeader.classList.toggle("active");
+            //   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+            // }
+
+            accordionItemHeader.classList.toggle("active");
+            const accordionItemBody = accordionItemHeader.nextElementSibling;
+            if(accordionItemHeader.classList.contains("active")) {
+            accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+            }
+            else {
+            accordionItemBody.style.maxHeight = 0;
+            }
+            
+        });
+        });
+    </script>
+    <script>
+      const navbar = document.getElementById("additional-nav");
+      window.onscroll = (e) => {
+      if (window.scrollY > 200) {
+      navbar.classList.replace("additional-nav-hidden", "additional-nav-show");
+      } else {
+      navbar.classList.replace("additional-nav-show", "additional-nav-hidden");
+      }};
+    </script>
   </body>
 </html>
