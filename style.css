@@ -1122,6 +1122,25 @@ footer {
     .accordion-item-header h4 {
         max-width: 350px;
     }
+
+    .about2-item-wrapper {
+        margin-top: 0;
+    }
+    .about2-item:first-child .about2-item-wrapper{
+        border-bottom: 0;
+        border-radius: 14px 14px 0 0;
+    }
+    .about2-item:nth-child(2) .about2-item-wrapper{
+        border-top: 0;
+        border-radius: 0;
+        border-bottom: 0;
+        min-height: 240px;
+    }
+    .about2-item:last-child .about2-item-wrapper{
+        border-top: 0;
+        border-radius: 0 0 14px 14px;
+        min-height: 140px;
+    }
 }
 
 
