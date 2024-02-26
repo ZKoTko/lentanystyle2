@@ -903,7 +903,7 @@ footer {
         margin-right: 8px;
     }
     .banner-params {
-        align-items: flex-start;
+        align-items: center;
         padding: 0;
         justify-content: space-between;
         margin: 0 auto;
