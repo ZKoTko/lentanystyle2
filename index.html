@@ -43,6 +43,21 @@
     </style>
   </head>
   <body>
+    <div class="modal" tabindex="-1" id="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Text or link to PDF</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <main>
 
       <section class="additional-nav additional-nav-hidden" id="additional-nav">
@@ -114,12 +129,11 @@
 
             <div class="banner-text">
               <p data-aos="fade-up" data-aos-duration="1500">Byty 2+kk za 4 340 000 Kč</p>
-              <h1 data-aos="fade-up" data-aos-duration="1500">Panorama Letňany</h1>
             </div>
           
             <div class="banner-params row">
-              <div class="banner-param col-xl-4 col-lg-4 col-sm-12 col-12" id="first-param" data-aos="fade-up" data-aos-duration="500"><p>OC Letňany<b> 4 min</b></p><p>Metro Letňany<b>6 min</b></p></div>
-              <div class="banner-params-group col-xl-8 col-lg-8 col-sm-12 col-12">
+              <div class="banner-param col-xl-4 col-lg-4 col-sm-12 col-7" id="first-param" data-aos="fade-up" data-aos-duration="500"><p>OC Letňany<b> 4 min</b></p><p>Metro Letňany<b>6 min</b></p></div>
+              <div class="banner-params-group col-xl-8 col-lg-8 col-sm-12 col-5">
                 <div class="banner-param" id="banner-param2" data-aos="fade-up" data-aos-duration="1000"><p>110 000,- Kč včetně DPH</p></div>
                 <div class="banner-param" data-aos="fade-up" data-aos-duration="1500"><p><b>Volných bytů:</b>pouze 13</p></div>
               </div>
@@ -148,7 +162,7 @@
                   </p>
                 </div>
                 <div class="col-xl-6 col-lg-12">
-                  <div class="about-img-wrapper"></div>
+                  <div class="about-img-wrapper"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4307.894110887562!2d14.535122949730551!3d50.05840008128974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b928b43445751%3A0x32337708ff2e4ede!2sPr%C5%AFmyslov%C3%A1%207%20Business%20Park!5e0!3m2!1sen!2sge!4v1706350381982!5m2!1sen!2sge" width="100%" style="border:0; height:100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                   <p>Projekt Panorama Letňany vzniká v místě s unikátní občanskou vybavenosti. Do 5 minut chůze od Vašeho budoucího domova se nachází škola, školka, krásné dětské hřiště,několik obchodů a restauraci. Naproti rezidenci se nachází OC Letňany, kde kromě obchodů si užijete také kino, restaurační část či dvoupatrový dětský koutek. Hned vedle OC Letňany se rozkládá areal trávení volného času - zimní stadion, sportovní hala, aquapark a další.
                     Fandíme cyklodopravě, připravili jsme proto v přízemí domu velké kolárny a u vstupu bude zřízeno místo pro parkování sdílených kol. 
                     <br><br>
@@ -367,9 +381,7 @@
               <button class="btn">Načíst vše</button>
             </a>
             <div class="table-text">
-              <p>
-                Veškerý obsah na webových stránkách projektu včetně uvedení kupní ceny s DPH není návrhem na uzavření smlouvy (rezervační, budoucí kupní, kupní) na koupi jednotek zde inzerovaných. Kupní ceny zde uvedené jsou cenami orientačními, společnost Rezidence Malkovského, a.s. si vyhrazuje právo na změnu kupní ceny. Kupní cena bude závazně sjednána uzavřením smlouvy (rezervační smlouvy, budoucí kupní smlouvy, nebo kupní smlouvy). Současně dle platných obchodních podmínek společnosti Rezidence Malkovského, a.s. je vyloučeno uzavření smlouvy prostřednictvím e-mailové komunikace, všechny z uvedených smluv mohou být tedy uzavřeny výlučně v písemné formě s originálním podpisem obou smluvních stran nebo jejich zástupců. Prezentované vizualizace projektu mají pouze informační charakter a mohou se od finální realizace odlišovat.
-              </p>
+              
             </div>
           </div>
         </div>
@@ -446,7 +458,7 @@
         </div>
       </section>
 
-      <section class="form-section" id="form-section">
+      <section class="form-section" id="form-section" >
         <div class="container">
           <div class="form-content row">
             <div class="form-contacts col-xxl-3 col-xl-3 col-lg-10 col-md-10 col-sm-12" data-aos="fade-up">
@@ -456,24 +468,26 @@
               <div class="form-contacts__wrapper">          
                 <div class="form-contacts__item">
                   <p>Napište nám</p>
-                  <h6>mail@mail.com</h6>
+                  <a href="#" style="text-decoration: none;"><h6>mail@mail.com</h6></a>
                 </div>
                 <div class="form-contacts__item">
                   <p>Zavolejte nám</p>
-                  <h6>+000 000 000 000</h6>
+                  <a href="#" style="text-decoration: none;"><h6>+000 000 000 000</h6></a>
                 </div>
               </div>
             </div>
             <div class="form-wrapper col-xxl-9 col-xl-6 col-lg-10 col-md-10 col-sm-12" data-aos="fade-up">
               <h3>Potřebujte poradit s výběrem nemovitosti?</h3>
-              <form action="" class="form">
+              <form action="" class="form mb-3">
                 <div>
                   <input type="text" placeholder="Jméno">
-                  <input type="text" placeholder="Příjmení">
+                  <input type="text" placeholder="Email">
                 </div>
                 <input type="text" placeholder="Telefon">
+                <textarea name="message" placeholder="Co se ti nejvíc líbilo?" id=""  rows="1"></textarea>
                 <div class="form-btn-wrapper"><button type="submit" class="btn form-btn">Poslat</button></div>
               </form>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#modal" style="color: #333;font-size: 12px;margin-top: 24px;margin-bottom: 0;">Vaše osobní údaje zpracováváme v souladu s GDPR. Více informací o zpracování osobních údajů.</a>
             </div>
           </div>
         </div>
@@ -658,6 +672,30 @@
       } else {
       navbar.classList.replace("additional-nav-show", "additional-nav-hidden");
       }};
+
+
+      const modal = document.getElementById('modal');
+  
+
+      // Функция, которая меняет класс второго элемента
+      function changeClass(mutationsList, observer) {
+        mutationsList.forEach(mutation => {
+          if (mutation.attributeName === 'class' && modal.classList.contains('show')) {
+            // Если у первого элемента добавлен класс "first-class", то добавляем класс "new-class" ко второму элементу
+            navbar.classList.replace("additional-nav-show", "additional-nav-hidden");
+          } else {
+            // Иначе, удаляем класс "new-class" у второго элемента
+            navbar.classList.replace("additional-nav-hidden", "additional-nav-show");
+          }
+        });
+      }
+
+      // Создаем новый экземпляр MutationObserver с функцией обратного вызова changeClass
+      const observer = new MutationObserver(changeClass);
+
+      // Настраиваем наблюдение за атрибутом class элемента element1
+      observer.observe(modal, { attributes: true });
     </script>
+    
   </body>
 </html>
