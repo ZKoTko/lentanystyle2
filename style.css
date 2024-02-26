@@ -979,7 +979,7 @@ footer {
     .banner {
         height: fit-content;
         padding: 4px 0;
-        min-height: 600px;
+        
     }
     .banner-param:first-child {
         display: flex;
